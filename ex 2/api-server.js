@@ -1,5 +1,6 @@
 const http = require('http');
-const requisicao = function(request, reponse){
+
+const requisicao = function(_, reponse){
     reponse.writeHead(200, { "Content-Type": "text/html" });
     reponse.write("<h1>Texto Teste</h1>");
     reponse.end();
