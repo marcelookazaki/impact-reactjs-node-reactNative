@@ -22,7 +22,7 @@ export class CadastroCursos extends React.Component{
 
     componentDidMount(){
         this.listarCursos();
-      }
+    }
 
     listarCursos(){
           Axios.get(URL)
@@ -90,7 +90,7 @@ export class CadastroCursos extends React.Component{
             this.listarCursos();
 
             alert(msg);
-            
+
         }catch(error){
             console.log(error);
         }
